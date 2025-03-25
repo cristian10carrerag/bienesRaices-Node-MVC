@@ -1,6 +1,5 @@
 import {DataTypes} from 'sequelize'
 import db from '../config/db.js'
-import { toDefaultValue } from 'sequelize/lib/utils';
 
 const Propiedad = db.define('propiedades', {
     id : {
@@ -51,3 +50,5 @@ const Propiedad = db.define('propiedades', {
         defaultValue: false
     }
 });
+
+export default Propiedad;
